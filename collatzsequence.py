@@ -13,6 +13,11 @@ def collatz(number):
 
 print('Hi! Please enter any integer number, and the final value will be 1 as aligned with the collatz function.')
 
+try: 
+  int(input())
+except ValueError:
+ print('HALT! Must enter an integer')
+
 userInput = int(input())
 
 while userInput > 1:
